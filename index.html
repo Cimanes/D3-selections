@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - D3 selections</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 class="hint">Click on a circle</h1>
+  <svg width="700" height="450">
+    <g transform="translate(70, 70)">
+<!-- 	Create circles on the top row explicitly		 -->
+      <circle r="40" id='0' selected='false' class='row1'/>
+      <circle r="40" cx="120" id='1' selected='false' class='row1'/>
+      <circle r="40" cx="240" id='2' selected='false' class='row1'/>
+      <circle r="40" cx="360" id='3' selected='false' class='row1'/>
+      <circle r="40" cx="480" id='4' selected='false' class='row1'/>
+    </g>
+  </svg>
+
+	<div class="ref">
+		<p>Last Click: <span id="details"></span></p>
+		<p>As Found: <span id="asFound"></span></p>
+		<p>As Left: <span id="asLeft"></span></p>
+	</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
